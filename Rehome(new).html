@@ -115,10 +115,26 @@
             padding: 10px;
             font-size: 20px;
         }
-        
-        .started {
-            margin-top: 20px;
+         /* Styling for the "Get Started" button */
+         .started {
+            position: absolute;
+            bottom: 10px; /* Adjusted for button placement */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #F0544F;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
         }
+        
+        .started:hover {
+            background-color: #e74c3c;
+        }
+    
         
         .heading {
             font-weight: bold;
@@ -241,7 +257,7 @@
             <h1 class="logo">Pawsible</h1>
             <div id="tabcontainer" class="end-100 d-flex justify-content-end">
                 <a href="adopt.html" class="ps-3 pe-3">Adopt</a>
-                <a href="RehomeForm.html" class="ps-3 pe-3">Report</a>
+                <a href="Rehome.html" class="ps-3 pe-3">Report</a>
                 <a href="petabout.html" class="ps-3 pe-3">About</a>
             </div>
         </div>
@@ -279,8 +295,8 @@
             </dl>
         </div>
         <div class="img-container">
-            <img src="Picsart_23-08-18_12-11-25-555.png">
-            <a href="Rehome(new).html" class="btn btn-primary btn-lg started">Get Started</a>
+            <img src="Picsart_23-08-18_12-11-25-555.png" alt="Abandoned Animal Image">
+            <a href="RehomeForm.html" class="btn btn-primary btn-lg started">Click here to report!</a>
         </div>
         <footer class="text-center text-lg-start text-white" style="background-color: #F0544F;">
             <!-- Section: Links  -->
